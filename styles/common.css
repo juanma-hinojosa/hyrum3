@@ -1,0 +1,187 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2, h3, h4,  h5, h1, p {
+    margin: 0px;
+}
+
+.toggle {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: black url(/potfolio-img/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.toggle.active {
+    background: black url(/potfolio-img/close.png);
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section {
+    /* padding: 100px; */
+    min-height: 100vh;
+}
+
+.banner {
+    /* position: relative;
+    width: 100%; */
+    display: flex;
+    align-items: center;
+}
+
+.banner .imgSidebar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 500px;
+    height: 100%;
+}
+
+.banner .imgSidebar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .contentBx, .sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 500px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoText {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: black;
+    color: whitesmoke;
+    padding: 0px 5px;
+}
+
+.banner .contentBx h4 {
+    font-size: 1.5em;
+    color: black;
+    font-weight: 300;
+}
+
+.banner .contentBx h4  span {
+    color: cornflowerblue;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner .contentBx h2 {
+    font-size: 3em;
+    color: black;
+    line-height: 1em;
+} 
+
+p {
+    font-size: 1.1em;
+    margin: 20px 0px;
+    font-weight: 300;
+}
+
+.btn {
+    background: cornflowerblue;
+    color: whitesmoke;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.sidebar {
+    position: fixed;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    /* padding: 40px; */
+    z-index: 100;
+    right: -100%;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 10px 0px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: .2;
+}
+
+.sidebar ul li a:hover {
+    color: cornflowerblue;
+}
+
+.sci {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li {
+    /* margin-right: 10px; */
+    list-style: none;
+}
+
+.sci li img {
+    transform: scale(0.5);
+    opacity: 0.7;
+    transition: .5;
+}
+
+.sci li img:hover {
+    opacity: 1;
+}
+

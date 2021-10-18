@@ -1,0 +1,66 @@
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.title h2 {
+    position: relative;
+    color: cornflowerblue;
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.title p {
+    max-width: 700px;
+    display: inline-block;
+}
+
+.title h2::before {
+    content: '';
+    position: absolute;
+    left: 47.5%;
+    transform: translateY(-50%);
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background: black;
+}
+
+.title.white h2, .title.white P {
+    color: whitesmoke;
+}
+
+.title.white h2::before {
+    background: white;
+}
+
+.about {
+    background: black;
+
+    padding: 100px;
+}
+
+.about .content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    /* padding: 100px; */
+}
+
+.about .content .textBx {
+    min-width: 49%;
+    width: 49%;
+}
+
+.about .content .textBx p {
+    color: white;
+}
+
+.about .content .imgBx {
+    margin-left: 40px;
+}
+
+.about .content .imgBx img {
+    max-width: 100%;
+}
